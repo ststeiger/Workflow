@@ -13,9 +13,9 @@ namespace Workflow.Presentation.CommandLine
             {
                 ContainerBootstrapper.RegisterTypes(container);
 
-                //container.Resolve<IProcess>().Initialize();
-                //container.Resolve<ISurveyAnswerStore>().Initialize();
-                //container.Resolve<ITenantStore>().Initialize();
+                container.Resolve<IProcess>().Initialize();
+                container.Resolve<ISurveyAnswerStore>().Initialize();
+                container.Resolve<ITenantStore>().Initialize();
 
                 Console.WriteLine("Done");
                 Console.ReadLine();

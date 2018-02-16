@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -141,6 +142,10 @@
     <ProjectReference Include="..\Workflow.Common\Workflow.Common.csproj">
       <Project>{9692c81e-4956-481f-9501-652f26f4ff51}</Project>
       <Name>Workflow.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Workflow.Repositories.DataRepository\Workflow.Repositories.DataRepository.csproj">
+      <Project>{1563cfdc-aaaa-436f-b3d0-6fea6d8b0bb5}</Project>
+      <Name>Workflow.Repositories.DataRepository</Name>
     </ProjectReference>
     <ProjectReference Include="..\Workflow.Services.DataService\Workflow.Services.DataService.csproj">
       <Project>{4c832681-f604-4006-9a79-88aa9ccef617}</Project>

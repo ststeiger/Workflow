@@ -1,7 +1,9 @@
 using Microsoft.Practices.Unity;
 using System.Web.Mvc;
 using Unity.Mvc5;
+using Workflow.Common.Models;
 using Workflow.Presentation.Web.Infrastructure;
+using Workflow.Repositories.DataRepository;
 
 namespace Workflow.Presentation.Web
 {
@@ -15,6 +17,14 @@ namespace Workflow.Presentation.Web
             // it is NOT necessary to register your controllers
 
             // e.g. container.RegisterType<ITestService, TestService>();
+
+
+            //container.RegisterType<Common.IGenericRepository<Process>
+            //    , GenericRepository<Process>>();
+
+            //container.RegisterType<Common.Services.IProcessService, 
+            //    Services.DataService.ProcessService>();
+            
 
             //container.RegisterTypes(
             //    AllClasses.FromLoadedAssemblies(),
